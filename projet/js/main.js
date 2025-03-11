@@ -11,3 +11,13 @@
  let q9="Quelle est la ville la plus proche du Mont Targon ?"
  let q10="Combien de personnages vivent au Mont Targon ?"
  
+let r1="2006"
+let r2="236 minutes et 52 secondes"
+let r3="Marin"
+let r4="Uzi"
+let r5="13"
+let r6="Kegan Rodghe"
+let r7="Sarah"
+let r8="17"
+let r9="Nerimazeth"
+let r10="7"
