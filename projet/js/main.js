@@ -23,6 +23,9 @@ let r9="Nerimazeth"
 let r10="7"
 let resultat = 0
 
+let blaz= prompt("Quel est votre prénom")
+
+
 console.log(q1)
 let MaRep = prompt(q1)
 if (MaRep == r1){

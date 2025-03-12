@@ -1,0 +1,26 @@
+#app-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    padding: 40px 20px;
+
+}
+ 
+#q-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3,max-content);
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+
+#score{
+
+    position: fixed;
+    right: 40px;
+}
