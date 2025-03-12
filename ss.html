@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Progressif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Quiz</h1>
+
+    <div class="container">
+        <div id="question1" class="question visible">
+            <p>Quelle est la capitale de la France ?</p>
+            <label><input type="radio" name="q1" value="Paris"> Paris</label>
+            <label><input type="radio" name="q1" value="Londres"> Londres</label>
+            <label><input type="radio" name="q1" value="Rome"> Rome</label>
+        </div>
+
+        <div id="question2" class="question">
+            <p>Combien font 2 + 2 ?</p>
+            <label><input type="radio" name="q2" value="3"> 3</label>
+            <label><input type="radio" name="q2" value="4"> 4</label>
+            <label><input type="radio" name="q2" value="5"> 5</label>
+        </div>
+
+        <div id="question3" class="question">
+            <p>Quel est le plus grand océan du monde ?</p>
+            <label><input type="radio" name="q3" value="Atlantique"> Atlantique</label>
+            <label><input type="radio" name="q3" value="Pacifique"> Pacifique</label>
+            <label><input type="radio" name="q3" value="Indien"> Indien</label>
+        </div>
+
+        <button id="valider" class="hidden">Voir le score</button>
+        <p id="resultat" class="hidden"></p>
+        <button id="rejouer" class="hidden">Rejouer</button>
+
+        <input type="hidden" id="score" value="0">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
