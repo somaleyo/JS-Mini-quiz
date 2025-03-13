@@ -4,32 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Progressif</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body style="background-color: burlywood;">
 
     <h1>Quiz</h1>
 
+    <H2 id="welcome">Welcome :</H2>
+
     <div class="container">
         <div id="question1" class="question visible">
-            <p>Quelle est la capitale de la France ?</p>
-            <label><input type="radio" name="q1" value="Paris"> Paris</label>
-            <label><input type="radio" name="q1" value="Londres"> Londres</label>
-            <label><input type="radio" name="q1" value="Rome"> Rome</label>
+            <p>En quelle année la création de League of Legends a-t-elle débuté ?</p>
+            <label><input type="radio" name="q1" value="2006"> 2006</label>
+            <label><input type="radio" name="q1" value="2008"> 2008</label>
+            <label><input type="radio" name="q1" value="2009"> 2009</label>
         </div>
 
         <div id="question2" class="question">
-            <p>Combien font 2 + 2 ?</p>
-            <label><input type="radio" name="q2" value="3"> 3</label>
-            <label><input type="radio" name="q2" value="4"> 4</label>
-            <label><input type="radio" name="q2" value="5"> 5</label>
+            <p>Combien de temps a duré la partie la plus longue de League of Legends ?</p>
+            <label><input type="radio" name="q2" value="236"> 236 Minutes et 52 secondes</label>
+            <label><input type="radio" name="q2" value="300"> 300 Minutes et 20 secondes</label>
+            <label><input type="radio" name="q2" value="270"> 270 Minutes et 19 seconde</label>
         </div>
 
         <div id="question3" class="question">
-            <p>Quel est le plus grand océan du monde ?</p>
-            <label><input type="radio" name="q3" value="Atlantique"> Atlantique</label>
-            <label><input type="radio" name="q3" value="Pacifique"> Pacifique</label>
-            <label><input type="radio" name="q3" value="Indien"> Indien</label>
+            <p>Qui était le joueur le plus utile du championnat du monde 2015 ?</p>
+            <label><input type="radio" name="q3" value="Marin">Marin</label>
+            <label><input type="radio" name="q3" value="Faker"> Faker</label>
+            <label><input type="radio" name="q3" value="Jankos"> Jankos</label>
+        </div>
+        <div id="question4" class="question">
+            <p>Qui détient le record de sbires tués en une partie pro ?</p>
+            <label><input type="radio" name="q4" value="Uzi">Uzi</label>
+            <label><input type="radio" name="q4" value="Faker"> Faker</label>
+            <label><input type="radio" name="q4" value="Caps"> Caps</label>
+        </div>
+        <div id="question5" class="question">
+            <p>Combien de régions comporte Runeterra ?</p>
+            <label><input type="radio" name="q5" value="16">16</label>
+            <label><input type="radio" name="q5" value="9"> 9</label>
+            <label><input type="radio" name="q5" value="13"> 13</label>
+        </div>
+        <div id="question6" class="question">
+            <p>Quel est le vrai nom de Brand ?</p>
+            <label><input type="radio" name="q6" value="Kegan">Kegan Rodghe</label>
+            <label><input type="radio" name="q6" value="Atakan"> Atakan</label>
+            <label><input type="radio" name="q6" value="Meguma">Meguma</label>
+        </div>
+        <div id="question7" class="question">
+            <p>Et celui de Miss Fortune ?</p>
+            <label><input type="radio" name="q7" value="Fiona">Fiona</label>
+            <label><input type="radio" name="q7" value="Sarah"> Sarah</label>
+            <label><input type="radio" name="q7" value="Sissi"> Sissi</label>
+        </div>
+  
+        <div id="question8" class="question">
+            <p>Combien de personnages utilisent des armes à feu ?</p>
+            <label><input type="radio" name="q8" value="16">16</label>
+            <label><input type="radio" name="q8" value="14"> 14</label>
+            <label><input type="radio" name="q8" value="17"> 17</label>
+        </div>
+        <div id="question9" class="question">
+            <p>Quelle est la ville la plus proche du Mont Targon ?</p>
+            <label><input type="radio" name="q9" value="Nerimazeth">Nerimazeth</label>
+            <label><input type="radio" name="q9" value="Otttah"> Otttah</label>
+            <label><input type="radio" name="q9" value="Sakion"> Sakion </label>
+        </div>
+        <div id="question10" class="question">
+            <p>Combien de personnages vivent au Mont Targon ?</p>
+            <label><input type="radio" name="q10" value="9">9</label>
+            <label><input type="radio" name="q10" value="7">7 </label>
+            <label><input type="radio" name="q10" value="Indie3"> 3</label>
         </div>
 
         <button id="valider" class="hidden">Voir le score</button>
@@ -39,6 +84,6 @@
         <input type="hidden" id="score" value="0">
     </div>
 
-    <script src="script.js"></script>
+    <script src="./skript.js"></script>
 </body>
 </html>
