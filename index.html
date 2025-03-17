@@ -3,93 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz interactif</title>
-    <link rel="stylesheet" href="./projet/styles/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Quiz Progressif</title>
+    <link rel="stylesheet" href="./projet/styles/style.css">
 </head>
-<body style="background-color: burlywood;" >
-    <header style="background-color: brown;">
-        <h1 class="text-center text-white monh1">Quizz</h1>
-    </header>
-    
-    <section class="text-white ">
-      <section class="text-center">
-        <div ><h2 >Welcome : <span id="pseudo">User</span></h2></div>
- 
-        <div><h2 >Ton score actuel : <span id="score">Score</span></h2></div>
-      </section>
-       <div id="score"></div>
-      <section>
+<body style="background-color: burlywood;">
 
-<div id="app-container">
+    <h1>Quiz</h1>
 
+    <H2 id="welcome">Welcome :</H2>
 
-</div>
-<div id="score"></div>
-<div id="app-title"></div>
+    <div class="container">
+        <div id="question1" class="question visible">
+            <p>En quelle année la création de League of Legends a-t-elle débuté ?</p>
+            <label><input type="radio" name="q1" value="2006"> 2006</label>
+            <label><input type="radio" name="q1" value="2008"> 2008</label>
+            <label><input type="radio" name="q1" value="2009"> 2009</label>
+        </div>
 
-  <div id="q-container">
-    
-    <div id="question">
-<div id="q-text">Question ?</div>
-<div id="answer">Answer</div>
-<div id="answer">Answer</div>
-<div id="answer">Answer</div>
-<div id="answer">Answer</div>
+        <div id="question2" class="question ">
+            <p>Combien de temps a duré la partie la plus longue de League of Legends ?</p>
+            <label><input type="radio" name="q2" value="236"> 236 Minutes et 52 secondes</label>
+            <label><input type="radio" name="q2" value="300"> 300 Minutes et 20 secondes</label>
+            <label><input type="radio" name="q2" value="270"> 270 Minutes et 19 seconde</label>
+        </div>
 
-
-  </div>
-  <div id="q-fb"></div>
-</div>
-
-
-
+        <div id="question3" class="question">
+            <p>Qui était le joueur le plus utile du championnat du monde 2015 ?</p>
+            <label><input type="radio" name="q3" value="Marin">Marin</label>
+            <label><input type="radio" name="q3" value="Faker"> Faker</label>
+            <label><input type="radio" name="q3" value="Jankos"> Jankos</label>
+        </div>
+        <div id="question4" class="question">
+            <p>Qui détient le record de sbires tués en une partie pro ?</p>
+            <label><input type="radio" name="q4" value="Uzi">Uzi</label>
+            <label><input type="radio" name="q4" value="Faker"> Faker</label>
+            <label><input type="radio" name="q4" value="Caps"> Caps</label>
+        </div>
+        <div id="question5" class="question">
+            <p>Combien de régions comporte Runeterra ?</p>
+            <label><input type="radio" name="q5" value="16">16</label>
+            <label><input type="radio" name="q5" value="9"> 9</label>
+            <label><input type="radio" name="q5" value="13"> 13</label>
+        </div>
+        <div id="question6" class="question">
+            <p>Quel est le vrai nom de Brand ?</p>
+            <label><input type="radio" name="q6" value="Kegan">Kegan Rodghe</label>
+            <label><input type="radio" name="q6" value="Atakan"> Atakan</label>
+            <label><input type="radio" name="q6" value="Meguma">Meguma</label>
+        </div>
+        <div id="question7" class="question">
+            <p>Et celui de Miss Fortune ?</p>
+            <label><input type="radio" name="q7" value="Fiona">Fiona</label>
+            <label><input type="radio" name="q7" value="Sarah"> Sarah</label>
+            <label><input type="radio" name="q7" value="Sissi"> Sissi</label>
+        </div>
   
-      </section>
+        <div id="question8" class="question">
+            <p>Combien de personnages utilisent des armes à feu ?</p>
+            <label><input type="radio" name="q8" value="16">16</label>
+            <label><input type="radio" name="q8" value="14"> 14</label>
+            <label><input type="radio" name="q8" value="17"> 17</label>
+        </div>
+        <div id="question9" class="question">
+            <p>Quelle est la ville la plus proche du Mont Targon ?</p>
+            <label><input type="radio" name="q9" value="Nerimazeth">Nerimazeth</label>
+            <label><input type="radio" name="q9" value="Otttah"> Otttah</label>
+            <label><input type="radio" name="q9" value="Sakion"> Sakion </label>
+        </div>
+        <div id="question10" class="question">
+            <p>Combien de personnages vivent au Mont Targon ?</p>
+            <label><input type="radio" name="q10" value="9">9</label>
+            <label><input type="radio" name="q10" value="7">7 </label>
+            <label><input type="radio" name="q10" value="Indie3"> 3</label>
+        </div>
 
-        
-    </section>
+        <button id="valider" class="hidden">Voir le score</button>
+        <p id="resultat" class="hidden"></p>
+        <button id="rejouer" class="hidden">Rejouer</button>
 
-
-
-
-<footer class="bg-body-tertiary text-center text-lg-start">
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!--Grid row-->
-    <div class="row">
-      <!--Grid column-->
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">qui est riot </h5>
-
-        <p>
-          Riot Games was founded in 2006 to develop, publish, and support the most player-focused games in the world. As we went from one game to many, we have expanded to over 4,500 Rioters across more than 20 offices around the world bringing a global perspective to the games we create and the characters in them. From the streets of Piltover to the Radianite labs of Alpha Earth, we are all about making games and serving the people who love them.
-        </p>
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">WE ARE GLOBAL</h5>
-
-        <p>
-          Riot Games’ HQ is located in sunny Los Angeles, but we have many more offices around the globe. We’re looking for passionate gamers who are also leaders in their field to help us deliver value to players — no matter where they play.
-        </p>
-      </div>
-      <!--Grid column-->
+        <input type="hidden" id="score" value="0">
     </div>
-    <!--Grid row-->
-  </div>
-  <!-- Grid container -->
 
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2024
-    <a class="text-body" href="https://support.riotgames.com/hc/fr">Riot games support</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-
-    <script src="./projet/js/mai.js"></script>
+    <script src="./projet/js/skript.js"></script>
 </body>
 </html>
